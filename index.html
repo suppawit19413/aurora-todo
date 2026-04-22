@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aurora Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="todo_app_icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="mesh-bg"></div>
+    
+    <main class="app-container">
+        <header class="app-header">
+            <h1 class="logo">Aurora</h1>
+            <p class="subtitle">Focus on what matters</p>
+        </header>
+
+        <section class="input-section glass-card">
+            <div class="input-wrapper">
+                <input type="text" id="todoInput" placeholder="Add a new task..." autocomplete="off">
+                <button id="addBtn" aria-label="Add Task">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+        </section>
+
+        <nav class="filter-tabs glass-card">
+            <button class="tab active" data-filter="all">All</button>
+            <button class="tab" data-filter="active">Active</button>
+            <button class="tab" data-filter="completed">Done</button>
+        </nav>
+
+        <ul id="todoList" class="todo-list">
+            <!-- Tasks will be injected here -->
+        </ul>
+        
+        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">âœ¨</div>
+            <p>Your day is clear!</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
