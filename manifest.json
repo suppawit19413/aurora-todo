@@ -1,0 +1,17 @@
+{
+  "name": "Aurora Todo",
+  "short_name": "Aurora",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "todo_app_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "description": "A premium glassmorphic todo list app.",
+  "orientation": "portrait"
+}
