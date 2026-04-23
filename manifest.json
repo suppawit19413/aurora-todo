@@ -7,9 +7,9 @@
   "theme_color": "#6366f1",
   "icons": [
     {
-      "src": "todo_app_icon.png",
+      "src": "icon.jpg",
       "sizes": "1024x1024",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "description": "A premium glassmorphic todo list app.",
