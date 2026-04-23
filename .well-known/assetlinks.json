@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.suppawit19413.twa",
+        "sha256_cert_fingerprints": ["45:05:F2:9D:12:71:56:24:7C:1A:98:BE:C2:57:15:92:7B:95:B7:45:52:CB:AA:66:D2:7B:E5:74:52:1F:A5:4F"]
+      }
+    }]
