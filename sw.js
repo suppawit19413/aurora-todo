@@ -4,7 +4,7 @@ const ASSETS = [
   'style.css',
   'script.js',
   'manifest.json',
-  'todo_app_icon.png'
+  'icon.jpg'
 ];
 
 self.addEventListener('install', (event) => {
